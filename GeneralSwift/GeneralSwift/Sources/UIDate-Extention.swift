@@ -37,7 +37,9 @@ extension Date {
     }
     /// Returns the date after increase date  by days
     public func increaseDateBy(days: Int) -> Date {
-        return Calendar.current.date(byAdding: .day, value: days, to: self) ?? Date()
+        return Calendar.current.date(byAdding: .day,
+                                     value: days,
+                                     to: self) ?? Date()
     }
     
    public func compare(date : Date) -> ComparisonResult {

@@ -17,7 +17,9 @@ public struct DateHelper {
      return result
  }
     /// get date as string
-   public static func getStringDate(date: Date , dateformate : String) -> String {
+   public static func getStringDate(date: Date,
+                                    dateformate : String) -> String
+   {
         let formatter = DateFormatter()
         formatter.timeZone = .current
         formatter.locale = Locale(identifier: "en_US_POSIX")
@@ -27,7 +29,8 @@ public struct DateHelper {
         return result
     }
     /// get curren time
-   public static func getCurrentTime() -> String {
+   public static func getCurrentTime() -> String
+   {
         let date = Date()
         let formatter = DateFormatter()
         formatter.timeZone = .current
@@ -38,7 +41,9 @@ public struct DateHelper {
         return result
     }
     /// get difference between two times
-  public static func getdifferenceTimes(time1Str: String, time2Str: String) -> String {
+  public static func getDifferenceTimes(time1Str: String,
+                                        time2Str: String) -> String
+  {
         let timeformatter = DateFormatter()
         timeformatter.dateFormat = "hh:mm a"
 

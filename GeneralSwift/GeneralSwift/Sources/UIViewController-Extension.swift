@@ -9,18 +9,30 @@
 import UIKit
 extension UIViewController
 {
-    
-   public func showAlert(message: String, title: String = "" , addCancelAction : Bool ,okTitle : String , cancelTitle : String ) {
+    /// Present alert dialog
+   public func presentAlert(message: String,
+                            title: String = "",
+                            addCancelAction : Bool,
+                            oTherTitle : String,
+                            cancelTitle : String , cancelHandler: ((UIAlertAction) -> ())? = nil ,   otherHandler: ((UIAlertAction) -> ())? = nil)
+   {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let oKAction = UIAlertAction(title: okTitle, style: .default, handler: nil)
-        let cancelAction = UIAlertAction(title: cancelTitle, style: .cancel, handler: nil)
+        let oTherAction = UIAlertAction(title: oTherTitle, style: .default, handler: otherHandler)
+        let cancelAction = UIAlertAction(title: cancelTitle, style: .cancel, handler: cancelHandler)
         if addCancelAction  {
             alertController.addAction(cancelAction)
         }
-        alertController.addAction(oKAction)
+        alertController.addAction(oTherAction)
         self.present(alertController, animated: true, completion: nil)
     }
-    public func showActionsheet(message: String, title: String = "" , addCancelAction : Bool ,okTitle : String , cancelTitle : String  , from sourceView: UIView) {
+    ///Present ActionSheet
+    public func presentActionsheet(message: String,
+                                   title: String = "",
+                                   addCancelAction : Bool,
+                                   okTitle : String,
+                                   cancelTitle : String,
+                                   from sourceView: UIView)
+    {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
         let oKAction = UIAlertAction(title: okTitle, style: .default, handler: nil)
         let cancelAction = UIAlertAction(title: cancelTitle, style: .cancel, handler: nil)
@@ -35,4 +47,6 @@ extension UIViewController
         alertController.addAction(oKAction)
         self.present(alertController, animated: true, completion: nil)
     }
+
+    
 }
