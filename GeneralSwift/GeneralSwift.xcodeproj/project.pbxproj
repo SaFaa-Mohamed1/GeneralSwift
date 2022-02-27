@@ -60,6 +60,8 @@
 				0684FAA627A00FBF007252F4 /* GeneralSwift.h */,
 				0684FAA727A00FBF007252F4 /* Info.plist */,
 				06AA119127C8085300230C02 /* Helper.swift */,
+				06AA119327C8152800230C02 /* UIVCExtention.swift */,
+				06AA119827C8237300230C02 /* DateExtention.swift */,
 				06AA119727C8235D00230C02 /* Extentions */,
 				06AA119527C81EAF00230C02 /* DateHelper.swift */,
 			);
@@ -69,8 +71,6 @@
 		06AA119727C8235D00230C02 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
-				06AA119327C8152800230C02 /* UIVCExtention.swift */,
-				06AA119827C8237300230C02 /* DateExtention.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
