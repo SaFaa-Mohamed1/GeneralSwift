@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "GeneralSwift"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "General functions"
   spec.description  = "General framework Contains The most used functions in applications"
   spec.homepage     = "https://github.com/SaFaa-Mohamed1/GeneralSwift"
