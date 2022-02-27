@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/SaFaa-Mohamed1/GeneralSwift"
   spec.license      = "MIT"
   spec.author       = { "safaa" => "safaam673@gmail.com" }
-  spec.platform     = :ios, "13.0"
+  spec.platform     = :ios, "12.0"
   spec.source       = { :git => "https://github.com/SaFaa-Mohamed1/GeneralSwift.git", :tag => spec.version.to_s }
   spec.source_files  = "GeneralSwift/GeneralSwift/*.{swift}"
   spec.swift_versions = "4.0"
