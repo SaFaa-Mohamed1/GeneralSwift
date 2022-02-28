@@ -20,14 +20,7 @@ extension UIViewController
     public func present(_ viewControllerToPresent: UIViewController) {
         present(viewControllerToPresent, animated: true, completion: nil)
     }
-    /// add  child ViewController
-    public func addChildViewController(_ viewController: UIViewController) {
-        viewController.willMove(toParent: self)
-        addChild(viewController)
-        viewController.view.frame = view.frame
-        view.addSubview(viewController.view)
-        viewController.didMove(toParent: self)
-    }
+    
     /// dismiss viewController
     public func dismiss(completion: (() -> Void)? = nil) {
         presentingViewController?.dismiss(animated: true, completion: completion)
