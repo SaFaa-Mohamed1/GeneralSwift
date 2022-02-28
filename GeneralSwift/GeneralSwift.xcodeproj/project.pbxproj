@@ -11,9 +11,8 @@
 		0684FAB127A0144D007252F4 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0684FAB027A0144D007252F4 /* Validator.swift */; };
 		06AA119227C8085300230C02 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AA119127C8085300230C02 /* Helper.swift */; };
 		06AA119427C8152800230C02 /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AA119327C8152800230C02 /* UIViewController-Extension.swift */; };
-		06AA119627C81EAF00230C02 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AA119527C81EAF00230C02 /* DateHelper.swift */; };
+		06AA119627C81EAF00230C02 /* Date-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AA119527C81EAF00230C02 /* Date-Helper.swift */; };
 		06AA119927C8237300230C02 /* UIDate-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AA119827C8237300230C02 /* UIDate-Extention.swift */; };
-		06F0AF8927CC077A00BEC1E0 /* UITableView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F0AF8827CC077A00BEC1E0 /* UITableView-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +22,8 @@
 		0684FAB027A0144D007252F4 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		06AA119127C8085300230C02 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		06AA119327C8152800230C02 /* UIViewController-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-Extension.swift"; sourceTree = "<group>"; };
-		06AA119527C81EAF00230C02 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		06AA119527C81EAF00230C02 /* Date-Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date-Helper.swift"; sourceTree = "<group>"; };
 		06AA119827C8237300230C02 /* UIDate-Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDate-Extention.swift"; sourceTree = "<group>"; };
-		06F0AF8827CC077A00BEC1E0 /* UITableView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +66,11 @@
 		06AA119727C8235D00230C02 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				06AA119527C81EAF00230C02 /* DateHelper.swift */,
-				06AA119827C8237300230C02 /* UIDate-Extention.swift */,
 				06AA119327C8152800230C02 /* UIViewController-Extension.swift */,
+				06AA119827C8237300230C02 /* UIDate-Extention.swift */,
+				06AA119527C81EAF00230C02 /* Date-Helper.swift */,
 				06AA119127C8085300230C02 /* Helper.swift */,
 				0684FAB027A0144D007252F4 /* Validator.swift */,
-				06F0AF8827CC077A00BEC1E0 /* UITableView-Extension.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -158,11 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0684FAB127A0144D007252F4 /* Validator.swift in Sources */,
-				06AA119627C81EAF00230C02 /* DateHelper.swift in Sources */,
+				06AA119627C81EAF00230C02 /* Date-Helper.swift in Sources */,
 				06AA119227C8085300230C02 /* Helper.swift in Sources */,
 				06AA119927C8237300230C02 /* UIDate-Extention.swift in Sources */,
 				06AA119427C8152800230C02 /* UIViewController-Extension.swift in Sources */,
-				06F0AF8927CC077A00BEC1E0 /* UITableView-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
