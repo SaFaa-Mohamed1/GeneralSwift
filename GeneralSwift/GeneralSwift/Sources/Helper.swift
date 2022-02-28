@@ -6,6 +6,11 @@
 //
 
 import UIKit
+public protocol HelperProtocol {
+    static func hexStringToUIColor (hex:String) -> UIColor
+    static func getMobDevSerial() -> String
+    static func checkTextIsEmpty(txt: String)
+}
 public struct Helper {
     public static func hexStringToUIColor (hex:String) -> UIColor {
         var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()

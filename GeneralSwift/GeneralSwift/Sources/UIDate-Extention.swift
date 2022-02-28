@@ -6,7 +6,21 @@
 //
 
 import Foundation
-extension Date {
+public protocol DateProtocol
+{
+    func years(from date: Date) -> Int
+    func months(from date: Date) -> Int
+    func weeks(from date: Date) -> Int
+    func days(from date: Date) -> Int
+    func hours(from date: Date) -> Int
+    func minutes(from date: Date) -> Int
+    func seconds(from date: Date) -> Int
+    func increaseDateBy(days: Int) -> Date
+    func compare(date : Date) -> ComparisonResult
+    func offset(from date: Date) -> String
+    
+}
+extension Date : DateProtocol{
     /// Returns the amount of years from another date
    public func years(from date: Date) -> Int {
         return Calendar.current.dateComponents([.year], from: date, to: self).year ?? 0

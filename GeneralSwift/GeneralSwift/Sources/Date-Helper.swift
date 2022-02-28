@@ -6,7 +6,16 @@
 //
 
 import Foundation
-public struct DateHelper {
+
+public protocol DateHelperProtocol {
+    static func getCurrentDate(dateformate : String) -> String
+    static func getStringDate(date: Date, dateformate : String) -> String
+    static func getCurrentTime() -> String
+    static func getDifferenceTimes(time1Str: String, time2Str: String) -> String
+    
+    
+}
+public struct DateHelper : DateHelperProtocol {
     /// get current date
     public static func getCurrentDate(dateformate : String) -> String{
      let date = Date()

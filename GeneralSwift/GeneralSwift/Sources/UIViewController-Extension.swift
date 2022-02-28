@@ -7,8 +7,29 @@
 
  
 import UIKit
- 
-extension UIViewController
+public protocol ViewControllerProtocol {
+    func present(_ viewControllerToPresent: UIViewController,
+                        completion: @escaping (() -> ()))
+    func present(_ viewControllerToPresent: UIViewController)
+    func dismiss(completion: (() -> Void)?)
+    func presentAlert(message: String,
+                             title: String ,
+                             addCancelAction : Bool,
+                             oTherTitle : String,
+                             cancelTitle : String ,
+                             cancelHandler: ((UIAlertAction) -> ())? ,
+                             otherHandler: ((UIAlertAction) -> ())?)
+    func presentActionsheet(message: String,
+                                   title: String,
+                                   addCancelAction : Bool,
+                                   oTherTitle : String,
+                                   cancelTitle : String,
+                                   from sourceView: UIView,
+                                   cancelHandler: ((UIAlertAction) -> ())?,
+                                   otherHandler: ((UIAlertAction) -> ())?)
+    
+}
+extension UIViewController : ViewControllerProtocol
 
 {   /// Present viewController with completion
     public func present(_ viewControllerToPresent: UIViewController,
@@ -31,7 +52,9 @@ extension UIViewController
                              title: String = "",
                              addCancelAction : Bool,
                              oTherTitle : String,
-                             cancelTitle : String , cancelHandler: ((UIAlertAction) -> ())? = nil ,   otherHandler: ((UIAlertAction) -> ())? = nil)
+                             cancelTitle : String,
+                             cancelHandler: ((UIAlertAction) -> ())? = nil,
+                             otherHandler: ((UIAlertAction) -> ())? = nil)
     {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let oTherAction = UIAlertAction(title: oTherTitle, style: .default, handler: otherHandler)
