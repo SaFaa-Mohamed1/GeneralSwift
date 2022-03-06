@@ -10,5 +10,5 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "12.0"
   spec.source       = { :git => "https://github.com/SaFaa-Mohamed1/GeneralSwift.git", :tag => spec.version.to_s }
   spec.source_files  = '**/GeneralSwift/**/*.{swift}'
-  spec.swift_versions = "4.0"
+  spec.swift_versions = "5.0"
 end
