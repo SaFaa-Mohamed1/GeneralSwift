@@ -27,11 +27,14 @@ public protocol ViewControllerProtocol {
                                    from sourceView: UIView,
                                    cancelHandler: ((UIAlertAction) -> ())?,
                                    otherHandler: ((UIAlertAction) -> ())?)
+    func setuplayoutForCollectionView(direction : UICollectionView.ScrollDirection) -> UICollectionViewFlowLayout
     
 }
 extension UIViewController : ViewControllerProtocol
 
-{   /// Present viewController with completion
+{
+     
+    /// Present viewController with completion
     public func present(_ viewControllerToPresent: UIViewController,
                         completion: @escaping (() -> ())) {
         present(viewControllerToPresent, animated: true,
@@ -90,5 +93,11 @@ extension UIViewController : ViewControllerProtocol
         self.present(alertController, animated: true, completion: nil)
     }
     
-    
+    public func setuplayoutForCollectionView(direction : UICollectionView.ScrollDirection) -> UICollectionViewFlowLayout {
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.scrollDirection = direction
+        layout.minimumInteritemSpacing = 5
+        layout.minimumLineSpacing = 5
+        return layout
+    }
 }

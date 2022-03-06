@@ -13,6 +13,8 @@
 		06AA119427C8152800230C02 /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AA119327C8152800230C02 /* UIViewController-Extension.swift */; };
 		06AA119627C81EAF00230C02 /* Date-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AA119527C81EAF00230C02 /* Date-Helper.swift */; };
 		06AA119927C8237300230C02 /* UIDate-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AA119827C8237300230C02 /* UIDate-Extention.swift */; };
+		B59EC98227D4E23F00BE3266 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EC98127D4E23F00BE3266 /* GradientView.swift */; };
+		B59EC98427D4E37800BE3266 /* UITextView-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EC98327D4E37800BE3266 /* UITextView-Extention.swift */; };
 		B5BC5D4427D4C996005D9829 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BC5D4327D4C996005D9829 /* CustomButton.swift */; };
 		B5BC5D4627D4CAAC005D9829 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BC5D4527D4CAAC005D9829 /* ShadowView.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +28,8 @@
 		06AA119327C8152800230C02 /* UIViewController-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-Extension.swift"; sourceTree = "<group>"; };
 		06AA119527C81EAF00230C02 /* Date-Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date-Helper.swift"; sourceTree = "<group>"; };
 		06AA119827C8237300230C02 /* UIDate-Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDate-Extention.swift"; sourceTree = "<group>"; };
+		B59EC98127D4E23F00BE3266 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		B59EC98327D4E37800BE3266 /* UITextView-Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView-Extention.swift"; sourceTree = "<group>"; };
 		B5BC5D4327D4C996005D9829 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		B5BC5D4527D4CAAC005D9829 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +81,8 @@
 				0684FAB027A0144D007252F4 /* Validator.swift */,
 				B5BC5D4327D4C996005D9829 /* CustomButton.swift */,
 				B5BC5D4527D4CAAC005D9829 /* ShadowView.swift */,
+				B59EC98127D4E23F00BE3266 /* GradientView.swift */,
+				B59EC98327D4E37800BE3266 /* UITextView-Extention.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -165,7 +171,9 @@
 				B5BC5D4427D4C996005D9829 /* CustomButton.swift in Sources */,
 				06AA119227C8085300230C02 /* Helper.swift in Sources */,
 				06AA119927C8237300230C02 /* UIDate-Extention.swift in Sources */,
+				B59EC98427D4E37800BE3266 /* UITextView-Extention.swift in Sources */,
 				06AA119427C8152800230C02 /* UIViewController-Extension.swift in Sources */,
+				B59EC98227D4E23F00BE3266 /* GradientView.swift in Sources */,
 				B5BC5D4627D4CAAC005D9829 /* ShadowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
