@@ -188,6 +188,7 @@ open class PMSuperButton: UIButton {
     }
     
     //MARK: - Loading
+   @available(iOS 13.0 , *)
     let indicator: UIActivityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.medium)
     
     /**

@@ -47,6 +47,4 @@ public protocol ValidatorProtocol {
             return true
         }
     }
-    
-    
 }
