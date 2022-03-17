@@ -74,7 +74,7 @@ open class PMSuperButton: UIButton {
     }
     var gradient: CAGradientLayer?
     
-    func setupGradient(){
+   open func setupGradient(){
         guard gradientEnabled != false else{
             return
         }
@@ -177,13 +177,13 @@ open class PMSuperButton: UIButton {
     }
     
     //MARK: - Action Closure
-    private var action: (() -> Void)?
+    open var action: (() -> Void)?
     
     open func touchUpInside(action: (() -> Void)? = nil){
         self.action = action
     }
     
-    @objc func tapped(sender: PMSuperButton) {
+    @objc open func tapped(sender: PMSuperButton) {
         self.action?()
     }
     
@@ -288,7 +288,7 @@ extension PMSuperButton: CAAnimationDelegate{
         return true
     }
     
-    public func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+    open func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         let layer: CALayer? = anim.value(forKeyPath: "animationLayer") as? CALayer
         if layer != nil{
             layer?.removeAnimation(forKey: "scale")

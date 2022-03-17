@@ -10,7 +10,7 @@ extension UITextView :UITextViewDelegate
 {
 
     /// Resize the placeholder when the UITextView bounds change
-    override open var bounds: CGRect {
+    public override  var bounds: CGRect {
         didSet {
             self.resizePlaceholder()
         }
@@ -47,7 +47,7 @@ extension UITextView :UITextViewDelegate
     }
 
     /// Resize the placeholder UILabel to make sure it's in the same position as the UITextView text
-    private func resizePlaceholder() {
+    public func resizePlaceholder() {
         if let placeholderLabel = self.viewWithTag(100) as! UILabel? {
             let labelX = self.textContainer.lineFragmentPadding
             let labelY = self.textContainerInset.top - 2
@@ -59,7 +59,7 @@ extension UITextView :UITextViewDelegate
     }
 
     /// Adds a placeholder UILabel to this UITextView
-    private func addPlaceholder(_ placeholderText: String) {
+    public func addPlaceholder(_ placeholderText: String) {
         let placeholderLabel = UILabel()
 
         placeholderLabel.text = placeholderText
